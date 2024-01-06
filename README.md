@@ -26,7 +26,7 @@ First, you should obtain a share link for your site in `logflare.app`:
   - It should be something like `https://logflare.app/sources/public/<some-id>`
   - Copy the `<some-id>` part
 
-### Get logs
+### Tailing logs
 
 #### SSE
 
@@ -55,3 +55,20 @@ ws.onmessage = (event) => {
   // { body: ..., source: ..., timestamp: ... }
 };
 ```
+
+## License
+
+This project is licensed under GPLv3 license. See [LICENSE](./LICENSE) for more details.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
