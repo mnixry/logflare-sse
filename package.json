@@ -10,10 +10,8 @@
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231218.0",
     "@types/phoenix": "^1.6.4",
-    "@types/set-cookie-parser": "^2.4.7",
     "cheerio": "1.0.0-rc.12",
     "phoenix": "^1.7.10",
-    "set-cookie-parser": "^2.6.0",
     "typescript": "^5.0.4",
     "wrangler": "^3.0.0"
   }
