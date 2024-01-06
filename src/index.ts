@@ -56,6 +56,7 @@ export default {
       channel.on(`source:${sourceToken}:new`, (payload) =>
         server.send(JSON.stringify(payload))
       );
+      socket.onClose(() => server.close());
 
       return new Response(null, {
         status: 101,
@@ -73,6 +74,7 @@ export default {
         encoder.encode(isSSE ? `event: data\ndata: ${data}\n\n` : `${data}\n`)
       );
     });
+    socket.onClose(() => writer.close());
 
     const headers = new Headers();
     headers.set('cache-control', 'no-cache');
